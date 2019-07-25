@@ -1,0 +1,155 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <!--<changeSet author="Trung" id="1">-->
+        <!--<createTable tableName="review">-->
+            <!--<column autoIncrement="true" name="review_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="author_id" type="bigint">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="content" type="text">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="rating" type="tinyint(1)"/>-->
+            <!--<column name="house_id" type="bigint"/>-->
+            <!--<column name="create_at" type="timestamp"/>-->
+            <!--<column name="update" type="timestamp"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung2" id="2">-->
+        <!--<createTable tableName="apartment">-->
+            <!--<column autoIncrement="true" name="apartment_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="apartment_name" type="varchar(255)">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="content" type="text">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="author_id" type="bigint">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="city_id" type="bigint"/>-->
+            <!--<column name="country_id" type="bigint"/>-->
+            <!--<column name="feature_img" type="bigint"/>-->
+            <!--<column name="street" type="varchar(255)">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="longitude" type="decimal(9,6)"/>-->
+            <!--<column name="latitude" type="decimal(9,6)"/>-->
+            <!--<column name="price_perdate" type="float">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="number_bedroom" type="int">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="number_bathroom" type="int">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="apartment_type" type="varchar(255)">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="apartment_status" type="tinyint(2)">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="create_at" type="timestamp"/>-->
+            <!--<column name="update" type="timestamp"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung3" id="3">-->
+        <!--<createTable tableName="checkin">-->
+            <!--<column autoIncrement="true" name="checkin_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="user_id" type="bigint"/>-->
+            <!--<column name="house_id" type="bigint"/>-->
+            <!--<column name="create_at" type="timestamp">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung4" id="4">-->
+        <!--<createTable tableName="checkout">-->
+            <!--<column autoIncrement="true" name="checkout_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="user_id" type="bigint"/>-->
+            <!--<column name="house_id" type="bigint"/>-->
+            <!--<column name="create_at" type="timestamp">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung5" id="5">-->
+        <!--<createTable tableName="media">-->
+            <!--<column autoIncrement="true" name="media_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="name_media" type="varchar(255)"/>-->
+            <!--<column name="path_media" type="varchar(255)"/>-->
+            <!--<column name="create_at" type="timestamp">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung6" id="6">-->
+        <!--<createTable tableName="apartment_media">-->
+            <!--<column autoIncrement="true" name="apartment_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="media_id" type="bigint"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung7" id="7">-->
+        <!--<createTable tableName="apartment_not_available">-->
+            <!--<column autoIncrement="true" name="id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="apartment_id" type="bigint"/>-->
+            <!--<column name="time" type="datetime"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung8" id="8">-->
+        <!--<createTable tableName="apartment_rent">-->
+            <!--<column autoIncrement="true" name="apartment_rent_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="user_id" type="bigint"/>-->
+            <!--<column name="apartment_id" type="bigint"/>-->
+            <!--<column name="date_checkin" type="datetime"/>-->
+            <!--<column name="date_checkout" type="datetime"/>-->
+            <!--<column name="apartment_rent-status" type="tinyint(2)"/>-->
+            <!--<column name="checkin" type="bigint">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="checkout" type="bigint">-->
+                <!--<constraints nullable="false"/>-->
+            <!--</column>-->
+            <!--<column name="create_at" type="timestamp"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung9" id="9">-->
+        <!--<createTable tableName="country">-->
+            <!--<column autoIncrement="true" name="country_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="country_name" type="varchar(255)"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+    <!--<changeSet author="Trung10" id="10">-->
+        <!--<createTable tableName="city">-->
+            <!--<column autoIncrement="true" name="city_id" type="BIGINT">-->
+                <!--<constraints primaryKey="true"/>-->
+            <!--</column>-->
+            <!--<column name="country_id" type="bigint"/>-->
+            <!--<column name="city_name" type="varchar(255)"/>-->
+        <!--</createTable>-->
+    <!--</changeSet>-->
+</databaseChangeLog>
