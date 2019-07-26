@@ -3,13 +3,15 @@ package com.airbnb.web.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "customersAuto")
+@Table(name = "customers")
 public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+//    @Column(name = "fastName")
     private String firstName;
+//    @Column(name = "lastName")
     private String lastName;
 
     public Customer() {
