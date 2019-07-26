@@ -24,5 +24,13 @@ Cweb/src/main/java/com/airbnb/web/repository/CustomerRepository.java,7\d\7d8e82
 web/mvnw.cmd,9\8\983c1c75670da996182327b38354790a0eac2b41
 ;
 web/pom.xml,7\4\74db3766c5ffc022e47692cc672a7bd748475ac8
-d
-4web/src/main/java/com/airbnb/web/model/Customer.java,7\5\75336dc1fcc7b8224fe24a79f6b12840575080da
+]
+-dao/src/main/resources/application.properties,3\9\39c3d09d2a856faf289cd77c0e8c69330766b0d5
+s
+Cweb/src/main/java/com/airbnb/web/controller/CustomerController.java,4\e\4e5f98c3ea33defca9ed237ca56e0e8e68ecac98
+f
+6web/src/main/java/com/airbnb/web/entity/Apartment.java,8\6\86be09d296b9211c8ddc8b45a47bb7717465135e
+a
+1web/src/main/java/com/airbnb/web/entity/User.java,e\c\ec764530cc63542ae5e4b16980b5af43cd82b148
+c
+3web/src/main/java/com/airbnb/web/entity/Review.java,1\a\1a86e5b771ffb45648f1cf3f9967dcfb4d504892

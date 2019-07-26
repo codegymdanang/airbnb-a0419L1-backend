@@ -7,10 +7,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/business-service/pom.xml" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/webservice/pom.xml" />
-        <option value="$PROJECT_DIR$/dao/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -19,5 +15,5 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
