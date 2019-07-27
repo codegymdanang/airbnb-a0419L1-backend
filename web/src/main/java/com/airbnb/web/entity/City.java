@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "city")
@@ -24,5 +25,9 @@ public class City {
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id",referencedColumnName = "coutry_id",nullable = false)
     Country country;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
+    List<Apartment> apartmentList;
 
 }

@@ -40,12 +40,16 @@ public class Apartment {
     @Column(name = "create_at")
     Date create_at;
 
-    @OneToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "city_id",referencedColumnName = "city_id",nullable = false)
     City city;
 
-    @OneToOne
-    @JoinColumn(name = "country",referencedColumnName = "country_id",nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id",referencedColumnName = "country_id",nullable = false)
     Country country;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
+    User user;
 
 }

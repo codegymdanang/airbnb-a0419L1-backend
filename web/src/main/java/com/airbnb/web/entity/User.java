@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -37,6 +38,8 @@ public class User {
     @Column(name = "create_at")
     Date createAt;
 
-
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
+    List<Apartment> apartmentList;
 
 }
