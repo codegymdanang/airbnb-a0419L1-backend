@@ -1,6 +1,5 @@
 package com.airbnb.web.controller;
 
-import com.airbnb.web.model.Customer;
 import com.airbnb.web.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
