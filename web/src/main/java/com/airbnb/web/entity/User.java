@@ -44,4 +44,5 @@ public class User {
     List<Apartment> apartmentList;
     @ManyToMany(mappedBy="users")
     private List<Apartment> students = new ArrayList<Apartment>();
+
 }

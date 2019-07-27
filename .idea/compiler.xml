@@ -9,7 +9,6 @@
         <module name="web" />
         <module name="webservice" />
         <module name="business-service" />
-        <module name="dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

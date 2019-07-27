@@ -1,2 +1,6 @@
 
+<<<<<<< HEAD
 ^squid:S2094"BRemove this empty class, write its code or make it an "interface".(Ò—Çþÿÿÿÿ
+=======
+tsquid:S00116"URename this field "checkin_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÖØû8Ïì¬øÂ-
+>>>>>>> origin/new-dev
