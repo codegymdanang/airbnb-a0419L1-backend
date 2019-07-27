@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "apartment_rent")
@@ -21,11 +22,11 @@ public class ApartmentRent {
 
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
-    User user;
+    List<User> userList;
 
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    Apartment apartment;
+    List<Apartment> apartmentList;
 
     @Column(name = "date_checkin")
     Date checkin;

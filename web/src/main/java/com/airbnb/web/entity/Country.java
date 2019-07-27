@@ -22,6 +22,6 @@ public class Country {
     String country;
 
     @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
+    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id  ",nullable = false)
     List<Apartment> apartmentList;
 }
