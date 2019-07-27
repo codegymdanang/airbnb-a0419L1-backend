@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages = "com.airbnb.web")
 @EnableJpaRepositories("com.airbnb.web.repository")
-@EntityScan("com.airbnb.web.model")
+@EntityScan("com.airbnb.web.entity")
 public class WebApplication {
 
     public static void main(String[] args) {
