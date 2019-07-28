@@ -34,15 +34,14 @@ public class User {
     String phoneNumber;
 
     @Column(name = "gender")
-    String gender;
+    Integer gender;
 
     @Column(name = "create_at")
     Date createAt;
+    //done
+    @OneToMany(mappedBy = "user")
+    List<Apartment> apartments;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    List<Apartment> apartmentList;
-    @ManyToMany(mappedBy="users")
-    private List<Apartment> students = new ArrayList<Apartment>();
-
+    @OneToMany(mappedBy = "userRent")
+    List<ApartmentRent> apartmentRent;
 }

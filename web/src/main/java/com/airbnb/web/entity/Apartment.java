@@ -35,27 +35,17 @@ public class Apartment {
 
     @Column(name = "apartment_type")
     String type;
-//
-//    @Column(name = "apartment_status")
-//    String apartmentStatus;
 
     @Column(name = "create_at")
     Date create_at;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id", referencedColumnName = "city_id", nullable = false)
-    City city;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id", referencedColumnName = "country_id", nullable = false)
-    Country country;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", referencedColumnName = "user_id", nullable = false)
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
     User user;
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "ApartmentRent",
-            joinColumns = {@JoinColumn(name = "apartment_id")},
-            inverseJoinColumns = {@JoinColumn(name = "user_id")})
-    private List<User> users = new ArrayList<User>();
+
+    @OneToMany(mappedBy = "apartmentList")
+    List<ApartmentRent> apartmentRents;
+    @ManyToOne()
+    @JoinColumn(name = "city_id")
+    City cities;
 }

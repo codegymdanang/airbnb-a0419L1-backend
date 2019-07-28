@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "apartment_rent")
@@ -17,15 +18,7 @@ public class ApartmentRent {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "apartment_rent_id")
-    Long rent_id;
-
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
-    User user;
-
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    Apartment apartment;
+    Long apartment_rent_id;
 
     @Column(name = "date_checkin")
     Date checkin;
@@ -35,5 +28,12 @@ public class ApartmentRent {
 
     @Column(name = "apartment_rent-status")
     String status;
+    //done
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
+    User userRent;
 
+    @ManyToOne()
+    @JoinColumn(name = "apartment_id")
+    Apartment apartmentList;
 }

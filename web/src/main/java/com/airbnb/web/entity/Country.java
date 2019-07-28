@@ -20,8 +20,7 @@ public class Country {
 
     @Column(name = "country_name")
     String country;
+    @OneToMany(mappedBy = "country")
+    List<City> cities;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    List<Apartment> apartmentList;
 }
