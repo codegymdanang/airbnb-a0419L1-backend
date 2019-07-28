@@ -5,6 +5,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "apartment")
@@ -41,16 +42,27 @@ public class Apartment {
     @Column(name = "create_at")
     Date create_at;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "city_id",referencedColumnName = "city_id",nullable = false)
-    City city;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "city_id",referencedColumnName = "city_id",nullable = false)
+//    City city;
+//
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "country_id",referencedColumnName = "country_id",nullable = false)
+//    Country country;
+//
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
+//    User user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id",referencedColumnName = "country_id",nullable = false)
-    Country country;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
     User user;
+
+    @OneToMany(mappedBy = "apartmentList")
+    List<ApartmentRent> apartmentRents;
+
+    @ManyToOne()
+    @JoinColumn(name = "city_id")
+    City cities;
 
 }

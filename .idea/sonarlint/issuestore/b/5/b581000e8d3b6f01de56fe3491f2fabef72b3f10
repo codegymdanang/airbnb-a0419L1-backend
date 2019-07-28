@@ -1,2 +1,4 @@
 
-ssquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8¸êˆøÂ-
+}squid:UselessImportCheck"RRemove this unused import 'org.springframework.context.annotation.ComponentScans'.(è¦ù8µêÔ¡Ã-
+squid:UselessImportCheck
+"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8§±Ú¡Ã-

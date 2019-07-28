@@ -28,13 +28,13 @@ public class Review {
     @Column(name = "create_at")
     Date create_at;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
-    User user;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name ="apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    Apartment apartment;
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "user_id",referencedColumnName = "user_id",nullable = false)
+//    User user;
+//
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name ="apartment_id",referencedColumnName = "apartment_id",nullable = false)
+//    Apartment apartment;
 
 
 

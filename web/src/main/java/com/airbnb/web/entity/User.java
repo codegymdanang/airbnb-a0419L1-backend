@@ -34,13 +34,18 @@ public class User {
     String phoneNumber;
 
     @Column(name = "gender")
-    String gender;
+    Integer gender;
 
     @Column(name = "create_at")
     Date createAt;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    List<Apartment> apartmentList;
+//    @OneToMany(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
+//    List<Apartment> apartmentList;
 
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY)
+    List<Apartment> apartments;
+
+    @OneToMany(mappedBy = "userRent",fetch = FetchType.LAZY)
+    List<ApartmentRent> apartmentRent;
 }

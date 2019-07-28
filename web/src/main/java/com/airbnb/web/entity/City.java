@@ -22,12 +22,19 @@ public class City {
     @Column(name = "city_name")
     String city;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country_id",referencedColumnName = "country_id",nullable = false)
+//    @OneToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "country_id",referencedColumnName = "country_id",nullable = false)
+//    Country country;
+//
+//    @OneToMany(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
+//    List<Apartment> apartmentList;
+
+    @ManyToOne()
+    @JoinColumn(name = "country_id")
     Country country;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "apartment_id",referencedColumnName = "apartment_id",nullable = false)
-    List<Apartment> apartmentList;
+    @OneToMany(mappedBy = "cities")
+    List<Apartment> apartmentCity;
 
 }

@@ -11,7 +11,7 @@ public class UserConveter {
                 .fullName(userRequest.getFullName())
                 .phoneNumber(userRequest.getPhoneNumber())
                 .gender(userRequest.getGender())
-                .createAt(userRequest.getCreateAt())
+//                .createAt(userRequest.getCreateAt())
                 .build();
     }
 
@@ -23,7 +23,7 @@ public class UserConveter {
                 .fullName(user.getFullName())
                 .phoneNumber(user.getPhoneNumber())
                 .gender(user.getGender())
-                .createAt(user.getCreateAt())
+//                .createAt(user.getCreateAt())
                 .build();
     }
 }

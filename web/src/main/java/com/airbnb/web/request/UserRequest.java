@@ -21,7 +21,7 @@ public class UserRequest {
 
     String phoneNumber;
 
-    String gender;
-
-    Date createAt;
+    Integer gender;
+//
+//    Date createAt;
 }
