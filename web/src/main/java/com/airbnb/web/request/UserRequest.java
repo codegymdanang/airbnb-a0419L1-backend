@@ -19,6 +19,15 @@ public class UserRequest {
 
     String password;
 
+    public UserRequest(String fullName, String userName, String password, String phoneNumber) {
+
+        this.fullName = fullName;
+        this.userName = userName;
+        this.password = password;
+        this.phoneNumber = phoneNumber;
+
+    }
+
     String phoneNumber;
 
     Integer gender;

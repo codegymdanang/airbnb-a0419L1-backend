@@ -1,4 +1,7 @@
 
-rsquid:S00116*"TRename this field "create_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔííZ8°ÚÉôÂ-
-{squid:S00116"WRename this field "apartment_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê´¦Îÿÿÿÿÿ8¬Õ¦÷Â-
-isquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(œùŞ8°ÚÉôÂ-
+rsquid:S00116+"TRename this field "create_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔííZ8°ÚÉôÂ-
+isquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(¿ÅÆÖ8ËµÃµÃ-
+isquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(áÇÌ±8ËµÃµÃ-
+hsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(™„l8ËµÃµÃ-
+isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(œùŞ8°ÚÉôÂ-
+{squid:S00116"WRename this field "apartment_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê´¦Îÿÿÿÿÿ8¬Õ¦÷Â-

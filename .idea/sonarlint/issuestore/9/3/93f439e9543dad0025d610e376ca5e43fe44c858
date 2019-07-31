@@ -1,0 +1,5 @@
+
+ssquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚ξ‰ή8ÿι»Δ-
+jsquid:UselessImportCheck"?Remove this unused import 'com.airbnb.web.service.UserService'.(οήώ΅8ÿι»Δ-
+ssquid:UselessImportCheck"HRemove this unused import 'com.airbnb.web.service.impl.UserServiceImpl'.(Σ‘ΐσ8ÿι»Δ-
+‘squid:UselessImportCheck	"aRemove this unused import 'org.springframework.data.jpa.repository.config.EnableJpaRepositories'.(²όÿÿÿÿ8ηο»Δ-

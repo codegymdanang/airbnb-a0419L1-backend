@@ -1,6 +1,6 @@
 
+hsquid:UselessImportCheck"8Remove this unused import 'java.lang.annotation.Target'.(†üïÍûÿÿÿÿ8Š»â¡Ã-
+Zsquid:S1854/"<Remove this useless assignment to local variable "userName".(›ìÏå8¸Œü¡Ã-
 Ksquid:S1481/"-Remove this unused "userName" local variable.(›ìÏå8¸Œü¡Ã-
 jsquid:S1192"LDefine a constant instead of duplicating this literal "phoneNumber" 4 times.(óéÛœ8à—ã¡Ã-
 nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(©ÿÕùøÿÿÿÿ8 ¨è¡Ã-
-Zsquid:S1854/"<Remove this useless assignment to local variable "userName".(›ìÏå8¸Œü¡Ã-
-hsquid:UselessImportCheck	"8Remove this unused import 'java.lang.annotation.Target'.(†üïÍûÿÿÿÿ8Š»â¡Ã-

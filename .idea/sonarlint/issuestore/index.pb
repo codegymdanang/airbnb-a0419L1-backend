@@ -20,8 +20,6 @@ d
 web/pom.xml,7\4\74db3766c5ffc022e47692cc672a7bd748475ac8
 ]
 -dao/src/main/resources/application.properties,3\9\39c3d09d2a856faf289cd77c0e8c69330766b0d5
-s
-Cweb/src/main/java/com/airbnb/web/controller/CustomerController.java,4\e\4e5f98c3ea33defca9ed237ca56e0e8e68ecac98
 f
 6web/src/main/java/com/airbnb/web/entity/Apartment.java,8\6\86be09d296b9211c8ddc8b45a47bb7717465135e
 a
@@ -86,3 +84,7 @@ n
 >web/src/main/java/com/airbnb/web/request/ApartmentRequest.java,7\d\7df926c4c31333a67a50f526a92b2df9007658b0
 p
 @web/src/main/java/com/airbnb/web/validate/ApartmentValidate.java,9\1\91dc53ae04629bac17de1fab4ba3d21e3175ca9d
+o
+?web/src/main/java/com/airbnb/web/controller/UserController.java,0\5\0548cafbc2bede724de5c4d3c358887ea7a1688e
+}
+Mwebservice/src/main/java/com/airbnb/webservice/controller/UserController.java,c\3\c3d46b483c939a41937024b28773d555094d08c1
