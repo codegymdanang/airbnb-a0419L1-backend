@@ -38,15 +38,15 @@ public class UserController {
         userService.save(user);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/user/{id}").buildAndExpand(user.getId()).toUri());
-        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
     @PutMapping(value = "/user/edit/{id}")
-    public ResponseEntity<User> suaNguoiDung(@PathVariable long id, @RequestBody UserRequest userRequest){
+    public ResponseEntity<User> suaNguoiDung(@PathVariable Long id, @RequestBody UserRequest userRequest){
         Optional<User> user = userService.findById(id);
 
         if (user == null){
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         userService.remove(id);
         User newUser = new User();

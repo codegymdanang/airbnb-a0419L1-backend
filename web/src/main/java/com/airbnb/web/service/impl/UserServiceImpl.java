@@ -11,9 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private UserRepository userRepository;
-
+   @Autowired
+   private UserRepository userRepository;
     @Override
     public Page<User> findAll(Pageable pageable) {
         return userRepository.findAll(pageable);
