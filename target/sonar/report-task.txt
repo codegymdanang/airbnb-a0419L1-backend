@@ -1,0 +1,6 @@
+projectKey=groupId:airbnb-a0419L1-backend
+serverUrl=http://codegymdanang.com:1051
+serverVersion=6.7.2.37468
+dashboardUrl=http://codegymdanang.com:1051/dashboard/index/groupId:airbnb-a0419L1-backend
+ceTaskId=AWw96S5I-XFxVvST9Cf5
+ceTaskUrl=http://codegymdanang.com:1051/api/ce/task?id=AWw96S5I-XFxVvST9Cf5
