@@ -14,7 +14,8 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE)
+@Data
+@FieldDefaults(level = AccessLevel.PUBLIC)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
